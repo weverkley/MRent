@@ -1,14 +1,33 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
 using MRent.Application.Injectors;
 using MRent.EventBus.Injectors;
 using MRent.Infrastructure.Injectors;
 using MRent.WebApi.Exceptions;
+using MRent.WebApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+{
+    options.InvalidModelStateResponseFactory = context =>
+    {
+        var msgs = new List<string>();
+
+        foreach (var item in context.ModelState.Values)
+        {
+            foreach (var error in item.Errors)
+            {
+                msgs.Add(error.ErrorMessage);
+            }
+        }
+
+        return new BadRequestObjectResult(new Retorno(String.Join(", \n", msgs)));
+    };
+});
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
@@ -44,7 +63,7 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.RegisterMassTransitAsEventBus(builder.Configuration);
 
-builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 

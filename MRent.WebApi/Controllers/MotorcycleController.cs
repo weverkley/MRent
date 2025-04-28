@@ -83,7 +83,7 @@ namespace MRent.WebApi.Controllers
             Summary = "Cadastrar uma nova moto",
             Description = "Cadastra uma moto com os dados fornecidos",
             OperationId = "motos.cadastrar")]
-        [SwaggerResponse(StatusCodes.Status201Created)]
+        [SwaggerResponse(StatusCodes.Status201Created, "Criado")]
         [SwaggerResponse(StatusCodes.Status400BadRequest, "Dados inválidos", typeof(Retorno))]
         public async Task<IActionResult> Create([FromBody] MotorcycleDTO entity)
         {

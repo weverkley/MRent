@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MRent.Application.Commands.Courier;
 using MRent.Application.Commands.Motorcycle;
 using MRent.Domain.Entities;
 
@@ -9,6 +10,9 @@ namespace MRent.Application.AutoMapper.Profiles
         public CommandToEntity()
         {
             CreateMap<CreateMotorcycleCommand, MotorcycleEntity>()
+                .ReverseMap();
+
+            CreateMap<CreateCourierCommand, CourierEntity>()
                 .ReverseMap();
         }
     }

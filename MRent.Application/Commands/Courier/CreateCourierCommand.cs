@@ -1,7 +1,7 @@
 ﻿using MRent.Domain.Commands;
 using MRent.Domain.Enums;
 
-namespace MRent.Application.Commands.Motorcycle
+namespace MRent.Application.Commands.Courier
 {
     public sealed class CreateCourierCommand : ICommand
     {

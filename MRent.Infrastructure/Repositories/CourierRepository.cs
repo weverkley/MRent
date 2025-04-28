@@ -18,6 +18,14 @@ namespace MRent.Infrastructure.Repositories
                 .FirstOrDefaultAsync(c => c.CNPJ == cnpj);
             return entity == null;
         }
+
+        public async Task<bool> IsCNHUniqueAsync(string cnh)
+        {
+            var entity = await _context.Couriers
+                .AsNoTracking()
+                .FirstOrDefaultAsync(c => c.CNH == cnh);
+            return entity == null;
+        }
     }
 }
 

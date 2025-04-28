@@ -26,7 +26,7 @@ namespace MRent.WebApi.Controllers
             Summary = "Cadastrar entregador",
             Description = "Cadastra um entregador com os dados fornecidos",
             OperationId = "entregadores.cadastrar")]
-        [SwaggerResponse(StatusCodes.Status201Created)]
+        [SwaggerResponse(StatusCodes.Status201Created, "Criado")]
         [SwaggerResponse(StatusCodes.Status400BadRequest, "Dados inválidos", typeof(Retorno))]
         public async Task<IActionResult> Create([FromBody] CourierDTO entity)
         {
@@ -40,16 +40,16 @@ namespace MRent.WebApi.Controllers
         [HttpPost("{id}/cnh")]
         [Produces("application/json")]
         [SwaggerOperation(
-            Summary = "Cadastrar uma nova moto",
-            Description = "Cadastra uma moto com os dados fornecidos",
-            OperationId = "motos.cadastrar")]
-        [SwaggerResponse(StatusCodes.Status201Created)]
+            Summary = "Enviar foto da CNH",
+            Description = "Atualiza a foto da CNH no cadastro do entregador",
+            OperationId = "entregadores.fotocnh")]
+        [SwaggerResponse(StatusCodes.Status201Created, "Criado")]
         [SwaggerResponse(StatusCodes.Status400BadRequest, "Dados inválidos", typeof(Retorno))]
-        public async Task<IActionResult> UpdateCnh([FromBody] CourierDTO entity)
+        public async Task<IActionResult> UpdateCnh(string id, [FromForm] AtualizarImagem entity)
         {
-            _logger.Log(LogLevel.Information, "Cadastrando moto com a placa {placa}", entity.placa);
+            _logger.Log(LogLevel.Information, "Atualizando foto da cnh com id {id}", id);
 
-            await _courierService.CreateAsync(entity);
+            await _courierService.UpdateCnhImageAsync(Guid.Parse(id), entity.Imagem_cnh);
 
             return Created();
         }
