@@ -1,7 +1,0 @@
-{
-  "MRent.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wever\\Workspace\\MOTTU\\MRent\\MRent.Application",
-  "MRent.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wever\\Workspace\\MOTTU\\MRent\\MRent.Domain",
-  "MRent.EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wever\\Workspace\\MOTTU\\MRent\\MRent.EventBus",
-  "MRent.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wever\\Workspace\\MOTTU\\MRent\\MRent.Infrastructure",
-  "MRent.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wever\\Workspace\\MOTTU\\MRent\\MRent.WebApi"
-}
