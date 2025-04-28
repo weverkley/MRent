@@ -1,0 +1,17 @@
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Infrastructure.deps.json
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Infrastructure.runtimeconfig.json
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Infrastructure.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Infrastructure.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Domain.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\bin\Debug\net9.0\MRent.Domain.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.AssemblyInfo.cs
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.In.8E9A37A2.Up2Date
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\refint\MRent.Infrastructure.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\MRent.Infrastructure.genruntimeconfig.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Infrastructure\obj\Debug\net9.0\ref\MRent.Infrastructure.dll

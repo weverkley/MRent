@@ -1,0 +1,17 @@
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.Application.deps.json
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.Application.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.Application.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.Domain.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.EventBus.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.Domain.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\bin\Debug\net9.0\MRent.EventBus.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.csproj.AssemblyReference.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.AssemblyInfoInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.AssemblyInfo.cs
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.csproj.CoreCompileInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Ap.0D88856D.Up2Date
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\refint\MRent.Application.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\MRent.Application.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Application\obj\Debug\net9.0\ref\MRent.Application.dll

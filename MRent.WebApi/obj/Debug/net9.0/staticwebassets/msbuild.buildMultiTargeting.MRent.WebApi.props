@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MRent.WebApi.props" />
+</Project>

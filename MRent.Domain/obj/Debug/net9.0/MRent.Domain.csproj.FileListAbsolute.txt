@@ -1,0 +1,11 @@
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\bin\Debug\net9.0\MRent.Domain.deps.json
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\bin\Debug\net9.0\MRent.Domain.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\bin\Debug\net9.0\MRent.Domain.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.AssemblyInfoInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.AssemblyInfo.cs
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\refint\MRent.Domain.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\MRent.Domain.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.Domain\obj\Debug\net9.0\ref\MRent.Domain.dll

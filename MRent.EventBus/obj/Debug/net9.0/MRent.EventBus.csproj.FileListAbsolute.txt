@@ -1,0 +1,12 @@
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\bin\Debug\net9.0\MRent.EventBus.deps.json
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\bin\Debug\net9.0\MRent.EventBus.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\bin\Debug\net9.0\MRent.EventBus.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.csproj.AssemblyReference.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.AssemblyInfoInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.AssemblyInfo.cs
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.csproj.CoreCompileInputs.cache
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\refint\MRent.EventBus.dll
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\MRent.EventBus.pdb
+C:\Users\wever\Workspace\MOTTU\MRent\MRent.EventBus\obj\Debug\net9.0\ref\MRent.EventBus.dll
