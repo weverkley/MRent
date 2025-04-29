@@ -11,10 +11,10 @@ EXPOSE 5000
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["MRent.WebApi/MRent.Domain.csproj", "MRent.Domain/"]
-COPY ["MRent.WebApi/MRent.Infrastructure.csproj", "MRent.Infrastructure/"]
-COPY ["MRent.WebApi/MRent.Application.csproj", "MRent.Application/"]
-COPY ["MRent.WebApi/MRent.EventBus.csproj", "MRent.EventBus/"]
+COPY ["MRent.Domain/MRent.Domain.csproj", "MRent.Domain/"]
+COPY ["MRent.Infrastructure/MRent.Infrastructure.csproj", "MRent.Infrastructure/"]
+COPY ["MRent.Application/MRent.Application.csproj", "MRent.Application/"]
+COPY ["MRent.EventBus/MRent.EventBus.csproj", "MRent.EventBus/"]
 COPY ["MRent.WebApi/MRent.WebApi.csproj", "MRent.WebApi/"]
 RUN dotnet restore "./MRent.WebApi/MRent.WebApi.csproj"
 COPY . .

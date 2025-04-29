@@ -1,20 +1,4 @@
 services:
-  api:
-    container_name:  webapi
-    ports:
-      - "5000:5000"
-    depends_on:
-      - postgres
-    build:
-      context: .
-      dockerfile: ./MRent.WebApi/Dockerfile
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=postgres;Port=5432;Database=MRent;Username=postgres;Password=12345678;
-      - ASPNETCORE_URLS=http://+:5000
-    networks:
-      - backend_network
-    command: ["dotnet", "ef", "database update"]
-
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: rabbitmq
