@@ -5,7 +5,6 @@ namespace MRent.Application.Commands.Courier
 {
     public sealed class CreateCourierCommand : ICommand
     {
-        public required string Identifier { get; set; }
         public required string Name { get; set; }
         public required string CNPJ { get; set; }
         public required DateTime BornDate { get; set; }
@@ -15,9 +14,8 @@ namespace MRent.Application.Commands.Courier
 
         public CreateCourierCommand() { }
 
-        public CreateCourierCommand(string identifier, string name, string cnpj, DateTime bornDate, string cnh, ECNHType cnhtype, string cnhimage)
+        public CreateCourierCommand(string name, string cnpj, DateTime bornDate, string cnh, ECNHType cnhtype, string cnhimage)
         {
-            Identifier = identifier;
             Name = name;
             CNPJ = cnpj;
             BornDate = bornDate;

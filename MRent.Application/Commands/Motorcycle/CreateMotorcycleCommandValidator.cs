@@ -11,9 +11,6 @@ namespace MRent.Application.Commands.Motorcycle
         {
             _motorcycleRepository = motorcycleRepository;
 
-            RuleFor(p => p.Identifier)
-                .NotEmpty().WithMessage("O identificador não pode estar vazio.");
-
             RuleFor(p => p.Year)
                 .NotEmpty().WithMessage("O ano não pode estar vazio.");
 

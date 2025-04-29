@@ -20,7 +20,7 @@ namespace MRent.WebApi.Exceptions
         {
             var message = exception.Message;
 
-            if (exception is not MotorcycleValidationException && exception is not CourierValidationException)
+            if (exception is not MotorcycleValidationException && exception is not CourierValidationException && exception is not RentValidationException)
             {
                 return false;
             }

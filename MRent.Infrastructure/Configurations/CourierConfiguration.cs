@@ -12,8 +12,6 @@ namespace MRent.Infrastructure.Configurations
 
             builder.HasKey(c => c.Id);
 
-            builder.HasIndex(i => i.Identifier);
-
             builder.HasIndex(i => i.CNPJ)
                 .IsUnique();
 
@@ -22,10 +20,6 @@ namespace MRent.Infrastructure.Configurations
 
             builder.Property(x => x.Id)
                 .HasColumnName("id")
-                .IsRequired();
-
-            builder.Property(x => x.Identifier)
-                .HasColumnName("identificador")
                 .IsRequired();
 
             builder.Property(x => x.Name)

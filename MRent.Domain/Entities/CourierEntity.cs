@@ -5,7 +5,6 @@ namespace MRent.Domain.Entities
 {
     public class CourierEntity : BaseEntity
     {
-        public required string Identifier { get; set; }
         public required string Name { get; set; }
         public required string CNPJ { get; set; }
         public required DateTime BornDate { get; set; }

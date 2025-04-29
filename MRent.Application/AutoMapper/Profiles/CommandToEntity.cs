@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MRent.Application.Commands.Courier;
 using MRent.Application.Commands.Motorcycle;
+using MRent.Application.Commands.Rent;
 using MRent.Domain.Entities;
 
 namespace MRent.Application.AutoMapper.Profiles
@@ -13,6 +14,12 @@ namespace MRent.Application.AutoMapper.Profiles
                 .ReverseMap();
 
             CreateMap<CreateCourierCommand, CourierEntity>()
+                .ReverseMap();
+
+            CreateMap<CreateRentCommand, RentEntity>()
+                .ReverseMap();
+
+            CreateMap<UpdateRentCommand, RentEntity>()
                 .ReverseMap();
         }
     }

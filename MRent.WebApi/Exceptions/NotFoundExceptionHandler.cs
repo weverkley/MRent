@@ -20,7 +20,7 @@ namespace MRent.WebApi.Exceptions
         {
             var message = exception.Message;
 
-            if (exception is not MotorcycleNotFoundException notFoundException)
+            if (exception is not MotorcycleNotFoundException && exception is not RentNotFoundException)
             {
                 return false;
             }
@@ -28,9 +28,9 @@ namespace MRent.WebApi.Exceptions
             message = "Moto não encontrada";
 
             _logger.LogError(
-                notFoundException,
+                exception,
                 "Exception occurred: {Message}",
-                notFoundException.Message);
+                exception.Message);
 
             httpContext.Response.StatusCode = StatusCodes.Status404NotFound;
 

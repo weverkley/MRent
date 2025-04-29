@@ -28,7 +28,7 @@ namespace MRent.WebApi.Controllers
             OperationId = "motos.listar")]
         [SwaggerResponse(StatusCodes.Status200OK, "Lista de motos", typeof(IEnumerable<MotorcycleDTO>))]
 
-        public async Task<IActionResult> GetAll([FromQuery] string placa)
+        public async Task<IActionResult> GetAll([FromQuery] string? placa)
         {
             if (placa is not null)
             {

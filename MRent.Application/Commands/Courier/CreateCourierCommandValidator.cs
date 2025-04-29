@@ -12,9 +12,6 @@ namespace MRent.Application.Commands.Courier
         {
             _courierRepository = courierRepository;
 
-            RuleFor(p => p.Identifier)
-                .NotEmpty().WithMessage("O identificador não pode estar vazio.");
-
             RuleFor(p => p.Name)
                 .NotEmpty().WithMessage("O nome não pode estar vazio.");
 

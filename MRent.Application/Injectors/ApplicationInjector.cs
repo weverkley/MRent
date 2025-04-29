@@ -6,6 +6,7 @@ using Minio;
 using MRent.Application.AutoMapper;
 using MRent.Application.Commands.Courier;
 using MRent.Application.Commands.Motorcycle;
+using MRent.Application.Commands.Rent;
 using MRent.Application.Interfaces;
 using MRent.Application.Services;
 
@@ -29,11 +30,14 @@ namespace MRent.Application.Injectors
             services.AddScoped<IValidator<UpdateMotorcyclePlateCommand>, UpdateMotorcyclePlateCommandValidator>();
             services.AddScoped<IValidator<CreateCourierCommand>, CreateCourierCommandValidator>();
             services.AddScoped<IValidator<UpdateCourierImageCNHCommand>, UpdateCourierImageCNHCommandValidator>();
+            services.AddScoped<IValidator<CreateRentCommand>, CreateRentCommandValidator>();
+            services.AddScoped<IValidator<UpdateRentCommand>, UpdateRentCommandValidator>();
 
             // Application Services
             services.AddTransient<IMotorcycleService, MotorcycleService>();
             services.AddTransient<ICourierService, CourierService>();
             services.AddTransient<IMinioService, MinioService>();
+            services.AddTransient<IRentService, RentService>();
 
             return services;
         }

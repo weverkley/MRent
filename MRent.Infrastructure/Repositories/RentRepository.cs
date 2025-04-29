@@ -18,6 +18,17 @@ namespace MRent.Infrastructure.Repositories
                 .Where(m => m.MotorcycleId == motorcycleId)
                 .ToListAsync();
         }
+
+        public override async Task<RentEntity?> GetByIdAsync(Guid id)
+        {
+            return await _context.Rents
+                .Include(i => i.Plan)
+                .Include(i => i.Motorcycle)
+                .Include(i => i.Courier)
+                .AsNoTracking()
+                .Where(m => m.Id == id)
+                .FirstOrDefaultAsync();
+        }
     }
 }
 

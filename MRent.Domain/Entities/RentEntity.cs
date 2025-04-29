@@ -10,6 +10,10 @@ namespace MRent.Domain.Entities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public DateTime ExpectedEndDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
+        public double Tax { get; set; }
+        public double Subtotal { get; set; }
+        public double Total { get; set; }
 
         public required virtual CourierEntity Courier { get; set; }
         public required virtual MotorcycleEntity Motorcycle { get; set; }

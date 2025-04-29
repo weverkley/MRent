@@ -43,6 +43,23 @@ namespace MRent.Infrastructure.Configurations
                 .HasColumnName("data_previsao_termino")
                 .IsRequired();
 
+            builder.Property(x => x.ReturnDate)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("data_devolucao")
+                .IsRequired(false);
+
+            builder.Property(x => x.Tax)
+                .HasColumnName("taxas")
+                .IsRequired();
+
+            builder.Property(x => x.Subtotal)
+                .HasColumnName("subtotal")
+                .IsRequired();
+
+            builder.Property(x => x.Total)
+                .HasColumnName("total")
+                .IsRequired();
+
             builder.HasOne(h => h.Plan)
                 .WithMany(w => w.Rents)
                 .HasForeignKey(f => f.PlanId)

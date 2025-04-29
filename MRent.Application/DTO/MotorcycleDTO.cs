@@ -2,8 +2,7 @@
 {
     public class MotorcycleDTO
     {
-        public Guid? id { get; set; }
-        public required string identificador { get; set; }
+        public string? identificador { get; set; }
         public int ano { get; set; }
         public required string modelo { get; set; }
         public required string placa { get; set; }

@@ -12,17 +12,11 @@ namespace MRent.Infrastructure.Configurations
 
             builder.HasKey(c => c.Id);
 
-            builder.HasIndex(i => i.Identifier);
-
             builder.HasIndex(i => i.Plate)
                 .IsUnique();
 
             builder.Property(x => x.Id)
                 .HasColumnName("id")
-                .IsRequired();
-
-            builder.Property(x => x.Identifier)
-                .HasColumnName("identificador")
                 .IsRequired();
 
             builder.Property(x => x.Year)

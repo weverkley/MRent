@@ -21,6 +21,7 @@ namespace MRent.Infrastructure.Injectors
             services.AddScoped<IMotorcycleLogRepository, MotorcicleLogRepository>();
             services.AddScoped<ICourierRepository, CourierRepository>();
             services.AddScoped<IRentRepository, RentRepository>();
+            services.AddScoped<IPlanRepository, PlanRepository>();
 
             return services;
         }

@@ -27,7 +27,6 @@ namespace MRent.Application.Consumers.Motorcycle
             var motorcycleLog = new MotorcycleLogEntity
             {
                 MotorcycleId = motorcycle.Id,
-                Identifier = motorcycle.Identifier,
                 Plate = motorcycle.Plate,
                 Model = motorcycle.Model,
                 Year = motorcycle.Year,

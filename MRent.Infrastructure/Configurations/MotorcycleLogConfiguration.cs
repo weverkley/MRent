@@ -12,8 +12,6 @@ namespace MRent.Infrastructure.Configurations
 
             builder.HasKey(c => c.Id);
 
-            builder.HasIndex(i => i.Identifier);
-
             builder.HasIndex(i => i.Plate)
                 .IsUnique();
 
@@ -23,10 +21,6 @@ namespace MRent.Infrastructure.Configurations
 
             builder.Property(x => x.MotorcycleId)
                 .HasColumnName("moto_id")
-                .IsRequired();
-
-            builder.Property(x => x.Identifier)
-                .HasColumnName("identificador")
                 .IsRequired();
 
             builder.Property(x => x.Year)

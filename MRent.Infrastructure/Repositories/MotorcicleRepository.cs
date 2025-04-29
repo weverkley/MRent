@@ -18,13 +18,6 @@ namespace MRent.Infrastructure.Repositories
                 .FirstOrDefaultAsync(m => m.Plate == plate);
         }
 
-        public async Task<MotorcycleEntity?> GetByIdentifierAsync(string identifier)
-        {
-            return await _context.Motorcycles
-                .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.Identifier == identifier);
-        }
-
         public async Task<bool> IsPlateUniqueAsync(string plate)
         {
             var entity = await _context.Motorcycles

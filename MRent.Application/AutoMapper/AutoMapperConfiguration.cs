@@ -11,6 +11,7 @@ namespace MRent.Application.AutoMapper
             {
                 cfg.AddProfile(new EntityToDTO());
                 cfg.AddProfile(new CommandToEntity());
+                cfg.AddProfile(new DTOToCommand());
             });
             return mapperConfiguration;
         }

@@ -3,6 +3,7 @@ using System;
 using MRent.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MRent.Infrastructure.Migrations
 {
     [DbContext(typeof(PostgresContext))]
-    partial class PostgresContextModelSnapshot : ModelSnapshot
+    [Migration("20250428234538_RefactoringIdentifiers")]
+    partial class RefactoringIdentifiers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,48 +158,6 @@ namespace MRent.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("plano", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("96234321-504d-47a3-ad27-f20ec91c9036"),
-                            DailyExceededEndDateFee = 50,
-                            DailyValue = 30.0,
-                            Days = 7,
-                            ReturnFeePercent = 20
-                        },
-                        new
-                        {
-                            Id = new Guid("6307d574-0979-4f1c-8761-a3425b4c955c"),
-                            DailyExceededEndDateFee = 50,
-                            DailyValue = 28.0,
-                            Days = 15,
-                            ReturnFeePercent = 40
-                        },
-                        new
-                        {
-                            Id = new Guid("466d0330-70b4-47b5-ae99-d3f62d40bd20"),
-                            DailyExceededEndDateFee = 50,
-                            DailyValue = 22.0,
-                            Days = 30,
-                            ReturnFeePercent = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("88924edf-91f6-4130-b54a-b51dc796da93"),
-                            DailyExceededEndDateFee = 50,
-                            DailyValue = 20.0,
-                            Days = 45,
-                            ReturnFeePercent = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("d0840305-d467-44ac-ac24-e4e791a58ed3"),
-                            DailyExceededEndDateFee = 50,
-                            DailyValue = 18.0,
-                            Days = 50,
-                            ReturnFeePercent = 0
-                        });
                 });
 
             modelBuilder.Entity("MRent.Domain.Entities.RentEntity", b =>
@@ -226,25 +187,9 @@ namespace MRent.Infrastructure.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("plano_id");
 
-                    b.Property<DateTime?>("ReturnDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("data_devolucao");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("timestamp without time zone")
                         .HasColumnName("data_inicio");
-
-                    b.Property<double>("Subtotal")
-                        .HasColumnType("double precision")
-                        .HasColumnName("subtotal");
-
-                    b.Property<double>("Tax")
-                        .HasColumnType("double precision")
-                        .HasColumnName("taxas");
-
-                    b.Property<double>("Total")
-                        .HasColumnType("double precision")
-                        .HasColumnName("total");
 
                     b.HasKey("Id");
 

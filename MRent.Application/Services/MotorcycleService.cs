@@ -55,19 +55,10 @@ namespace MRent.Application.Services
             return _mapper.Map<MotorcycleDTO>(motorcycle);
         }
 
-        public async Task<MotorcycleDTO> GetByIdentifierAsync(string identifier)
-        {
-            var motorcycle = await _motorcycleRepository.GetByIdentifierAsync(identifier);
-            if (motorcycle == null) throw new MotorcycleNotFoundException();
-
-            return _mapper.Map<MotorcycleDTO>(motorcycle);
-        }
-
         public async Task CreateAsync(MotorcycleDTO entity)
         {
             var command = new CreateMotorcycleCommand
             {
-                Identifier = entity.identificador,
                 Year = entity.ano,
                 Model = entity.modelo,
                 Plate = entity.placa

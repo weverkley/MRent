@@ -2,8 +2,7 @@
 {
     public class UpdateCourierImageDTO
     {
-        public Guid? id { get; set; }
-        public required string identificador { get; set; }
+        public string? identificador { get; set; }
         public required string nome { get; set; }
         public required string cnpj { get; set; }
         public required DateTime data_nascimento { get; set; }

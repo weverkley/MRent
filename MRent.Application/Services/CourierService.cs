@@ -38,7 +38,6 @@ namespace MRent.Application.Services
         {
             var command = new CreateCourierCommand
             {
-                Identifier = entity.identificador,
                 Name = entity.nome,
                 CNPJ = entity.cnpj,
                 BornDate = entity.data_nascimento,
