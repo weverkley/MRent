@@ -39,6 +39,12 @@ docker-compose up -d
 ```
 
 Docker compose in this application includes 4 services:
+- __Minio__
+- __Postgres__
+- __RabbitMQ__
+- __ASP.NET CORE API__
+
+Web Api URLS:
 
 - __ASP.NET Core API__ will be listening at `http://localhost:5000`
 

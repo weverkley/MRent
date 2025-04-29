@@ -5,15 +5,24 @@ services:
       - "5000:5000"
     depends_on:
       - postgres
+      - rabbitmq
+      - minio
     build:
       context: .
       dockerfile: ./MRent.WebApi/Dockerfile
     environment:
       - ConnectionStrings__DefaultConnection=Server=postgres;Port=5432;Database=MRent;Username=postgres;Password=12345678;
+      - MassTransit__RabbitMQ__Host=amqp://guest:guest@rabbitmq:5672
+      - MassTransit__RabbitMQ__Username=guest
+      - MassTransit__RabbitMQ__Password=guest
+      - Minio__BucketName=m-rent
+      - Minio__Endpoint=minio
+      - Minio__AccessKey=minio
+      - Minio__SecretKey=12345678
+      - Minio__UseSSL=false
       - ASPNETCORE_URLS=http://+:5000
     networks:
       - backend_network
-    command: ["dotnet", "ef", "database update"]
 
   rabbitmq:
     image: rabbitmq:3-management-alpine
@@ -27,6 +36,11 @@ services:
     restart: unless-stopped
     networks:
       - backend_network
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 15s
+      timeout: 30s
+      retries: 3
 
   minio:
     image: minio/minio
@@ -50,6 +64,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: MRent
       PGDATA: /data/postgres
     volumes:
        - pg_data:/data/postgres

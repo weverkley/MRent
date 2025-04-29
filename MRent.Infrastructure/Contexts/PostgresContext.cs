@@ -9,6 +9,7 @@ namespace MRent.Infrastructure.Contexts
     {
         public PostgresContext(DbContextOptions<PostgresContext> options) : base(options)
         {
+            Database.Migrate();
         }
 
         public DbSet<MotorcycleEntity> Motorcycles { get; set; }

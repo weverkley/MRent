@@ -9,7 +9,7 @@ namespace MRent.Infrastructure
         public PostgresContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<PostgresContext>();
-            optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5432;Database=Database;User Id=postgres;Password=12345678;");
+            optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5432;Database=MRent;User Id=postgres;Password=12345678;");
 
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
